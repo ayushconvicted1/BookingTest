@@ -12,7 +12,7 @@ function Shows() {
   const [modalVisible, setModalVisible] = useState(false);
   useEffect(() => {
     if (id) {
-      fetch(`${HOST}shows/${id.slice(1, id.length)}`)
+      fetch(`${HOST}shows/${id}`)
         .then((response) => response.json())
         .then((data) => setShowDetails(data))
         .catch((error) => console.error("Error fetching data:", error));

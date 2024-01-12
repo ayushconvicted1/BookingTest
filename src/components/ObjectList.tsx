@@ -102,7 +102,7 @@ const ObjectList = () => {
     <div className="object-list">
       {objectData.map((object, index) => (
         <div key={index} className="object-item">
-          <Link to={`/show/:${object.show.id}`}>
+          <Link to={`/show/${object.show.id}`}>
             {object.show.image?.medium ? (
               <img src={object.show.image?.medium} alt={object.show.name} />
             ) : (

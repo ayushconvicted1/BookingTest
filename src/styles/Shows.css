@@ -23,6 +23,8 @@ main {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 img {
@@ -33,6 +35,8 @@ img {
 
 .info {
   flex: 1;
+  width: 500px;
+  margin-top: 20px;
 }
 
 .info p {
